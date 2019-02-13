@@ -30,7 +30,6 @@ class ProductosController{
         $consulta =$this->conexion->prepare("SELECT titulo, consola, precio from tbl_juegos INNER JOIN tbl_consolas ON tbl_juegos.consola = tbl_consolas.id where precio between $rango1 and $rango2 and titulo like '%$titulo%' and consola = $consola;");
         $consulta->execute();
         $consulta= $consulta->fetchAll(\PDO::FETCH_ASSOC);
-        //$consulta =array($consulta->fetchAll(\PDO::FETCH_ASSOC));
         echo json_encode($consulta);
         }
     }

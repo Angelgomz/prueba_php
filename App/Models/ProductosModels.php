@@ -1,5 +1,4 @@
 <?php 
- require_once('ConexionModels.php');
     class Productos{ 
         protected $id;
         protected $titulo;

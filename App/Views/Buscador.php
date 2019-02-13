@@ -70,6 +70,7 @@ require_once('layouts/header.php');
       </div>
       <div class="modal-body">
             <table class="table" id="table">
+          
     <tbody id="tbody">
     </tbody>
     </tr>
