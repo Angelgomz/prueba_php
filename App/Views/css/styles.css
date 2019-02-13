@@ -1,0 +1,33 @@
+.slider.slider-horizontal{
+    width:310px !important;
+}
+body{
+    width:100vw;
+    height:100vh;    
+    overflow-x:hidden;
+    background-image:url('../imagenes/juego.png');
+}
+.formulario{
+    background-color:#fff !important;
+    position:relative;
+    top:30px;
+}
+b{
+    font-family:'Poppins',sans-serif !important;
+}
+.button{
+
+    text-transform: uppercase;
+    opacity:0.8;
+}
+.button:hover{
+    opacity:1.0;
+}
+.tooltip.in {
+    opacity: 1 !important;
+  }
+@media screen and (max-width:550px){
+    .slider.slider-horizontal{
+        width:120px !important;
+    }
+}
