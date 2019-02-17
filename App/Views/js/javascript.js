@@ -93,8 +93,23 @@
             var user = $('#user').val();
             var password = $('#password').val();
             var email = $('#email').val();
-            
-            
+            var bandera = 1;
+            $.ajax
+            ({
+              type:"POST",
+              url:'../public/index.php',
+              data:{
+                'nombre':nombre,
+                'apellido':apellido,
+                'user':user,
+                'password':password,
+                'email':email,
+                'bandera':bandera
+              },
+              success:function(resp){
+                console.log(resp);
+              } 
+            });
       });
        
       $('#formulario').on('submit',function(e){
