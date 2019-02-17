@@ -1,7 +1,7 @@
 <?php
 require_once('layouts/header.php');
 ?>
-    <form method="POST" action="../index.php" id="formulario">
+    <form method="POST" action="../public/index.php" id="formulario">
         <div class="row">
             <div class="container formulario">
             <br> <br>

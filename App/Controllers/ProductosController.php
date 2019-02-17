@@ -17,7 +17,7 @@ class ProductosController{
         session_start();
         $consulta=$consulta; 
         $_SESSION['consulta'] = $consulta; 
-        header('Location:Views/Buscador.php');
+        header('Location:../Views/Buscador.php');
     }
 
     public function read(){

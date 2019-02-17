@@ -1,6 +1,7 @@
 <?php
-require_once('Models/ConexionModels.php');
-require_once('Controllers/ProductosController.php');
+
+require_once('../Models/ConexionModels.php');
+require_once('../Controllers/ProductosController.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conexion =new Database();
@@ -8,10 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $controller->read(); 
 }
 else{
-    $conexion = new Database();
+   $conexion = new Database();
     $controller = new ProductosController($conexion);
-    $controller->Index(); 
+   $controller->Index(); 
 }
-
-
 ?>
